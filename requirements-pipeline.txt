@@ -1,0 +1,22 @@
+# Full pipeline dependencies (includes heavy CV/ML libraries)
+# Install separately when running the detection pipeline with real video clips
+
+# Core from requirements.txt
+fastapi==0.111.0
+uvicorn[standard]==0.29.0
+pydantic==2.7.1
+numpy==1.26.4
+scipy==1.13.0
+requests==2.31.0
+
+# Computer Vision
+ultralytics==8.2.0
+opencv-python-headless==4.9.0.80
+
+# Re-ID (optional — swap in for production)
+# torchreid
+# torch>=2.0.0
+
+# Testing
+pytest==8.2.0
+pytest-cov==5.0.0
